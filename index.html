@@ -26,16 +26,24 @@
 			<p id="message"></p>
 			<br />
 			<!--PARA EL 3X3 NORMAL-->
-		<table id="tab-tic-tac-toe" cellspacing="0">
-			<tr><td id="00" onclick="celdaSeleccionada(this)"></td><td id="01" onclick="celdaSeleccionada(this)"></td><td id="02" onclick="celdaSeleccionada(this)"></td></tr>
-			<tr><td id="10" onclick="celdaSeleccionada(this)"></td><td id="11" onclick="celdaSeleccionada(this)"></td><td id="12" onclick="celdaSeleccionada(this)"></td></tr>
-			<tr><td id="20" onclick="celdaSeleccionada(this)"></td><td id="21" onclick="celdaSeleccionada(this)"></td><td id="22" onclick="celdaSeleccionada(this)"></td></tr>
-		</table>
+		<div id="datosInicio">
+			<label for="rNombre">Nombre:</label>
+			<input type="text" name="nombreJ" id="txtNombreJ">
+			<label for="Tablero">Tablero:</label>
+			<select name="tablero" id="tableroSelected">
+				<option value="t3">3x3</option>
+				<option value="t5">5x5</option>
+				<option value="t7">7x7</option>
+			</select>
+		</div>
 		<br><br>
-		<input type="button" value="Iniciar MINMAX" id="bnt-restart" onclick="restartBnt(this)"/>
-		<br />
+		<a href="./home.html">
+			<input type="button" value="Iniciar Juego" id="bnt-restart"/>
+		</a>
+		
+		<br>
 		<footer>
-			<p>Repositorio: <a href="https://github.com/txusdavid27/MinMax-TicTacToe.git">GitHub</a></p>
+			<p>Repo: <a href="http://127.0.0.1:5500/home.html">GitHub</a></p>
 		</footer>
 	</body>
 </html>

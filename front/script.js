@@ -207,6 +207,14 @@ function celdaSeleccionada(cell) {
 
 /* Reiniciar Juego*/
 function restartBnt(button) {
+	var nameJ = document.getElementById("txtNombreJ");
+	var msg = document.getElementById("welcome");
+	if (nameJ != null){
+		msg.innerHTML = "Bienvenido "+nameJ+"!";
+	}else{
+		msg.innerHTML = "No funciona";
+	}
+	
 	if (button.value == "Iniciar MINMAX") {
 		aiTurn();
 		button.disabled = true;

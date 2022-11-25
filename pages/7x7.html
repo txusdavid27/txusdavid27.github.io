@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		Tic Tac Toe con Algorítmo MINMAX
+		Por: Angie Castro, Gabriel De Souza, Jesús David Traslaviña.
+		Año: 2022. -->
+		<meta charset="UTF-8" />
+		<meta content="Análisis de Algorítmos" name="developers" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="../front/style_.css" />
+		<script type="text/javascript" src="../front/script_.js"></script>
+		<title>ProyectoADA</title>
+	</head>
+	<body>
+		<header>
+			<p>Algorítmo MINMAX - SEGUNDO ENTREGABLE
+			</p>
+			<h4>
+				Angie-Gabriel-Jesús
+			</h4>
+			<img height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Javeriana.svg/1200px-Javeriana.svg.png">
+			<br>
+		</header>
+			<br />
+			<p id="message"></p>
+			<br />
+			<!--PARA EL 3X3 NORMAL-->
+		<table id="tab-tic-tac-toe" cellspacing="0">
+			<tr><td id="00" onclick="celdaSeleccionada(this)"></td><td id="10" onclick="celdaSeleccionada(this)"></td><td id="20" onclick="celdaSeleccionada(this)"></td><td id="30" onclick="celdaSeleccionada(this)"></td><td id="40" onclick="celdaSeleccionada(this)"></td><td id="50" onclick="celdaSeleccionada(this)"></td><td id="60" onclick="celdaSeleccionada(this)"></td></tr>
+			<tr><td id="01" onclick="celdaSeleccionada(this)"></td><td id="11" onclick="celdaSeleccionada(this)"></td><td id="21" onclick="celdaSeleccionada(this)"></td><td id="31" onclick="celdaSeleccionada(this)"></td><td id="41" onclick="celdaSeleccionada(this)"></td><td id="51" onclick="celdaSeleccionada(this)"></td><td id="61" onclick="celdaSeleccionada(this)"></td></tr>
+			<tr><td id="02" onclick="celdaSeleccionada(this)"></td><td id="12" onclick="celdaSeleccionada(this)"></td><td id="22" onclick="celdaSeleccionada(this)"></td><td id="32" onclick="celdaSeleccionada(this)"></td><td id="42" onclick="celdaSeleccionada(this)"></td><td id="52" onclick="celdaSeleccionada(this)"></td><td id="62" onclick="celdaSeleccionada(this)"></td></tr>
+			<tr><td id="03" onclick="celdaSeleccionada(this)"></td><td id="13" onclick="celdaSeleccionada(this)"></td><td id="23" onclick="celdaSeleccionada(this)"></td><td id="33" onclick="celdaSeleccionada(this)"></td><td id="43" onclick="celdaSeleccionada(this)"></td><td id="53" onclick="celdaSeleccionada(this)"></td><td id="63" onclick="celdaSeleccionada(this)"></td></tr>
+			<tr><td id="04" onclick="celdaSeleccionada(this)"></td><td id="14" onclick="celdaSeleccionada(this)"></td><td id="24" onclick="celdaSeleccionada(this)"></td><td id="34" onclick="celdaSeleccionada(this)"></td><td id="44" onclick="celdaSeleccionada(this)"></td><td id="54" onclick="celdaSeleccionada(this)"></td><td id="64" onclick="celdaSeleccionada(this)"></td></tr>
+			<tr><td id="05" onclick="celdaSeleccionada(this)"></td><td id="15" onclick="celdaSeleccionada(this)"></td><td id="25" onclick="celdaSeleccionada(this)"></td><td id="35" onclick="celdaSeleccionada(this)"></td><td id="45" onclick="celdaSeleccionada(this)"></td><td id="55" onclick="celdaSeleccionada(this)"></td><td id="65" onclick="celdaSeleccionada(this)"></td></tr>
+			<tr><td id="06" onclick="celdaSeleccionada(this)"></td><td id="16" onclick="celdaSeleccionada(this)"></td><td id="26" onclick="celdaSeleccionada(this)"></td><td id="36" onclick="celdaSeleccionada(this)"></td><td id="46" onclick="celdaSeleccionada(this)"></td><td id="56" onclick="celdaSeleccionada(this)"></td><td id="66" onclick="celdaSeleccionada(this)"></td></tr>
+			
+		</table>
+		<br><br>
+		<div id="flexCenter">
+			<div class="A">
+				<input type="button" value="Iniciar MINMAX" id="bnt-restart" onclick="restartBnt(this)"/>			  
+			</div>
+			<div class="B" >
+				<input type="button" value="3 X 3" id="bnt-7x7" onclick="location.href='../index.html'"/>
+			</div>  
+		</div>
+		<br>
+		<footer>
+			<p>Repositorio: <a href="https://github.com/txusdavid27/MinMax-TicTacToe.git">GitHub</a></p>
+		</footer>
+	</body>
+</html>
